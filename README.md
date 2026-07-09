@@ -1,0 +1,1 @@
+A hands-on IAM lab documenting Okta configuration work: OIDC app integrations, authentication policies, and authorization server claims, building toward IAM Analyst / Identity Security Consultant roles.
