@@ -112,6 +112,11 @@ Result: `SIGNATURE VALID - Token was genuinely issued by Okta`.
 - Decoded payload confirmed `scp`, `cid`/`sub`, and `cnf.jkt` claims matched
   expected values.
 - Independent RSA signature verification against the JWKS returned valid.
+- Full run output, both DPoP rejections through final signature verification,
+  captured in a single unedited execution:
+  (Screenshot: 05-full-run-output.png)
+- The complete PowerShell script used to reproduce this flow is included in
+  this repo as `05-client-credentials-dpop-jwt-validation.ps1`.
 
 ## Post-Entry Cleanup
 The client secret was visible in plaintext in an earlier working screenshot.
