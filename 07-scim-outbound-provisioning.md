@@ -54,7 +54,7 @@ without an admin doing it by hand.
 sequenceDiagram
     participant Okta
     participant ngrok
-    participant Server as PowerShell SCIM Server (localhost:8888)
+        participant Server as SCIM Server
 
     Note over Okta,Server: On assignment
     Okta->>ngrok: GET /scim/v2/Users?filter=userName eq "..."
