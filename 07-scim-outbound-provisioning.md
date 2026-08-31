@@ -142,14 +142,4 @@ I unassigned myself, setting `active: false` rather than deleting the
 record — confirming "Deactivate Users" performs a soft deactivation, not a
 hard delete.
 
-## Key Takeaway
 
-[Draft — rework this in your own words] Enabling API integration and
-enabling provisioning permissions are two separate steps in Okta. A green
-"verified successfully" on the credentials test only proves Okta can
-authenticate to the server — not that it's allowed to do anything once
-it's there. And when the downstream system is something you built
-yourself, the fastest way to debug it isn't guessing at Okta's
-configuration — it's watching the raw traffic (ngrok inspector) and the
-raw server logs side by side, since together they show exactly which side
-rejected what and why.
